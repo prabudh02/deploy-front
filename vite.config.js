@@ -6,7 +6,7 @@ export default defineConfig({
   server:{
     proxy: {
       '/api': {
-        target: 'http://localhost:4000', // Adjust this to your backend server URL
+        target: 'https://server-pearl-pi.vercel.app/', // Adjust this to your backend server URL
         
       },
     },
