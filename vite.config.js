@@ -5,10 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
     proxy: {
-      '/api': {
-        target: 'https://back-chi-two.vercel.app', // Adjust this to your backend server URL
+      '/api': 'https://back-chi-two.vercel.app', // Adjust this to your backend server URL
         
-      },
+      
     },
   },
   plugins: [react()],
