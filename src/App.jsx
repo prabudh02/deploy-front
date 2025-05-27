@@ -10,7 +10,7 @@ function App() {
   const getWeather = async () => {
     if (!city) return;
     try {
-      const response = await axios.get(`/api/weather?city=${city}`);
+      const response = await axios.get(`https://back-chi-two.vercel.app/weather?city=${city}`);
       setWeather(response.data);
     } catch (error) {
       alert('Failed to fetch weather');
