@@ -6,7 +6,7 @@ export default defineConfig({
   server:{
     proxy: {
       '/api': {
-        target: 'https://back-chi-two.vercel.app/', // Adjust this to your backend server URL
+        target: 'https://back-chi-two.vercel.app', // Adjust this to your backend server URL
         
       },
     },
